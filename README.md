@@ -24,12 +24,25 @@ If you are one of the lucky ones that live in a Chrome/Firefox/Safari only world
 ```css
 .container-element {
   position: relative;
-  height: 100vh; /* Do this if you want the element to fill the browser window...otherwise set your own height, or let any non-positioned elements inside the container to create the height of the container element...For the width, with divs, they will fill any container elements width by default due to the default display value of block. If the container is a direct child of the body, then their width will be the entire width of the browser window */
+  height: 100vh; 
 }
 
-/* Put your amazing heading in the middle of the container */
+.bg-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Put your amazing heading in the middle of the container
+   and on top of the video */
 .amazing-heading {
-  
+  font-size: 3.6em;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
 ```
