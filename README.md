@@ -132,6 +132,10 @@ For these instructions we will just call the videoFill plugin from an embedded s
 </body>
 </html>
 ```
+**Note:** The above code snippet assumes you have a video element in the HTML that has an "id" attribute value of "bg-video". You can use any jQuery CSS selector that will select the video element that you want the VideoFill plugin to be applied to.
+
+That's it. It should work from there.
+
 
 
 
