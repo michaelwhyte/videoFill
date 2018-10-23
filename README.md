@@ -113,6 +113,25 @@ You will need to attach the jQuery library and the VideoFill javascript file to 
 <script src="path-to-the-jquery.videofill.js-file"></script>
 </body>
 </html>
+```
+### Step 5
+
+The final step is to either create a separate JavaScript file and attach it to your HTML file and call the videoFill plugin from there or just call the videoFill() plugin from an embedded script.
+
+For these instructions we will just call the videoFill plugin from an embedded script in the HTML. See below:
+
+#### HTML
+
+```html
+<!-- other markup above -->
+<script src="path-to-the-jquery.min.js-file"></script>
+<script src="path-to-the-jquery.videofill.js-file"></script>
+<script>
+  $('#bg-video').videoFill();
+</script>
+</body>
+</html>
+```
 
 
 
