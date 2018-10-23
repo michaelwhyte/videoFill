@@ -136,6 +136,96 @@ For these instructions we will just call the videoFill plugin from an embedded s
 
 That's it. It should work from there.
 
+## Options
+
+This is a basic plugin, with only two options available.
+
+Below are the two options and their default values
+
+```javaScript
+{
+  container: this.parent(),
+  setCSS: true,
+  setContainerHeight: false
+}
+```
+## Options Explained
+
+### Container
+
+The container option tells the plugin which element to use as the video container. 
+
+By default the plugin will select the direct parent element of the video element that called the plugin. 
+
+If you setup the HTML using the markup shown above in the instructions with the video as a direct child of a container element, then you can leave this setting at its default value.
+
+If for various reasons your video element is nested deeper inside your container element, then you can tell the plugin which element to use as the container element.
+
+This option takes a jQuery object. So given the HTML structure below:
+
+#### HTML
+
+```html
+<div class="banner" id="banner">
+  <div class="banner-text-content">
+    <h2>Some Heading</h2>
+  </div>
+  <div class="banner-background">
+    <!-- video element is nested two levels
+         deep inside the container element -->
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="path-to-your-video-file">
+    </video>
+  </div>
+</div><!-- end banner -->
+```
+We would set the videoFill plugin's container option like so:
+
+#### JavaScript
+
+```javaScript
+$('#bg-video').videoFill({
+  container: $('#banner');
+});
+```
+
+### SetCSS
+
+The setCSS options tells the plugin whether or not you wish to set your CSS in your CSS file or let the plugin set your CSS for you. The default is to let the plugin set the required CSS for you on the container element and the video element. So by default you only need to set very minimal CSS yourself. 
+
+If you do want to set the CSS yourself in your CSS file than set the `setCSS` option to `false`. This option requires a boolean. Do not wrap the word `false` in quotes. See below:
+
+### JavaScript
+
+```javaScript
+$('#bg-video').videoFill({
+  setCSS: false
+});
+```
+
+When you set the `setCSS` option to `false` then you will need to set the required CSS yourself in your CSS file. 
+
+Given an HTML structure where the container element has a class of "container" and the video element has a class of "bg-video" and you want your video to fill the entire browser window you can use the following CSS in your CSS file:
+
+### CSS
+
+```css
+.container {
+  position: relative;
+  overflow: hidden;  
+  height: 100vh;
+}
+
+.bg-video {
+  position: aboslute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+```
+
+
 
 
 
