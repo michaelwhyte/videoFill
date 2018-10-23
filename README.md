@@ -55,7 +55,7 @@ To get around this limitation we can use JavaScript. In this case using JavaScri
 
 ## How Do I Use This Thing?
 
-This plugin and these instructions have been designed for people new to web development. Advanced users can just skip the first few steps and go to step ??
+This plugin and these instructions have been designed for people new to web development. Advanced users can just skip the first few steps and go to step 3
 
 ### Step 1
 
@@ -68,7 +68,7 @@ If your new to all this web stuff, then just choose the "Download Zip" option.
 Once you have downloaded this plugin to your local machine, open up the "src" folder located inside the "videoFill" folder. Inside the "src" folder you will find two files, one called "jquery.videofill.min.js" and the other called "jquery.min.js". Copy that file and paste it into your project folder (normally inside a folder called "scripts" or "js"). A common web site project folder might look something like this:
 
 ```
-your-web-site/
+your-web-site-folder/
 ├── index.html
 ├── scripts/
 │   ├── jquery.min.js
@@ -80,6 +80,39 @@ If you have no idea what the jQuery CDN is, then ignore this note and move on to
 
 ### Step 3
 
+With the JavaScript files copied over to your web site project folder, you will now need to create the HTML.
+
+The only required HTML elements needed for this plugin to work is a container element and a video element. See the minimum suggested HTML code below:
+
+#### HTML
+
+```html
+<div class="container">
+  <video autoplay playsinline loop muted id="bg-video">
+    <source src="path-to-your-video-file">
+  </video>
+</div><!-- end container -->
+```
+#### CSS
+
+The plugin automatically generates the required CSS for you by default. Their is no need for you to set any CSS. 
+
+If you want your container to be a certain size or other styling such as borders you are free to do so using standard CSS.
+
+### Step 4
+
+You will need to attach the jQuery library and the VideoFill javascript file to your HTML. Putting these before the closing body tags is the easy to fuss way to make sure it works. See the code below:
+
+**Note:** Change the "src" attribute to the path to the required JavaScript files
+
+#### HTML
+
+```html
+<!-- other markup above -->
+<script src="path-to-the-jquery.min.js-file"></script>
+<script src="path-to-the-jquery.videofill.js-file"></script>
+</body>
+</html>
 
 
 
