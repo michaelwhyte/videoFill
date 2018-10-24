@@ -23,7 +23,7 @@ $('#bg-video').videoFill();
 
 ## I Need More Instructions
 
-Great, keep on reading below.
+No problem. Keep on reading below for more detailed instructions.
 
 ## Why Is This Needed?
 
