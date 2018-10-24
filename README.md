@@ -4,7 +4,7 @@ A jQuery plugin for making a video element fill a parent or ancestor element. Th
 
 ## tl;dr - How do I use this thing?
 
-Download and install it in your projoct folder, then call it on the video element that you want to fill in as the background of a container element. See code below:
+Download and install it in your project folder, then call it on the video element that you want to fill in as the background of a container element. See code below:
 
 ### HTML
 
