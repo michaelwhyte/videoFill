@@ -38,7 +38,6 @@ If you are one of the lucky ones that live in a Chrome/Firefox/Safari only world
   <video muted autoplay playsinline loop class="bg-video">
     <source src="../path-to-your-background-video.mp4">
   </video>
-  <h1 class="amazing-heading">Some Amazing Heading That Sits <br>On Top of Your Video</h1>
 </div><!-- end container-element -->
 ```
 
@@ -54,19 +53,6 @@ If you are one of the lucky ones that live in a Chrome/Firefox/Safari only world
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
-
-/* Put your amazing heading in the middle of the container
-   and on top of the video */
-.amazing-heading {
-  font-size: 3.6em;
-  text-shadow: 2px 2px 5px black;
-  text-align: center;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 ```
 
