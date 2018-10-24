@@ -74,7 +74,7 @@ If you are one of the lucky ones that live in a Chrome/Firefox/Safari only world
 
 If you are like most web developers, you probably have to support the Microsoft Edge browser. The Edge browser does support the `object-fit` property, but only for image elements. It does not support `object-fit` for HTML video elements.
 
-To get around this limitation we can use JavaScript. In this case using JavaScript as a plugin for the jQuery library.
+To get around this limitation we can use JavaScript. In this case using jQuery plugin.
 
 ## How Do I Use This Thing?
 
