@@ -2,6 +2,29 @@
 
 A jQuery plugin for making a video element fill a parent or ancestor element. This is useful when trying to set a video as a background.
 
+## tl;dr - How do I use this thing?
+
+Download and install it in your projoct folder, then call it on the video element that you want to fill in as the background of a container element. See code below:
+
+### HTML
+
+```html
+<div class="container">
+  <video autoplay loop muted playsinline id="bg-video">
+    <source src="path-to-your-video-file">
+  </video>
+</div><!-- end container element -->
+```
+### JS
+
+```javascript
+$('#bg-video').videoFill();
+```
+
+## I Need More Instructions
+
+Great, keep on reading below.
+
 ## Why Is This Needed?
 
 In an ideal world HTML and CSS would be all that is required to make a video element sit in the background and fill its container element. In fact, in a world that does not include the Microsoft Edge browser and only includes modern versions of Chrome, Firefox and Safari you do not need JavaScript at all and can do this with just HTML and CSS using the CSS `object-fit` property and setting it to `cover` on the video element.
@@ -65,7 +88,7 @@ If your new to all this web stuff, then just choose the "Download Zip" option.
 
 ### Step 2
 
-Once you have downloaded this plugin to your local machine, open up the "src" folder located inside the "videoFill" folder. Inside the "src" folder you will find two files, one called "jquery.videofill.min.js" and the other called "jquery.min.js". Copy that file and paste it into your project folder (normally inside a folder called "scripts" or "js"). A common web site project folder might look something like this:
+Once you have downloaded this plugin to your local machine, open up the "src" folder located inside the "videoFill" folder. Inside the "src" folder you will find two files, one called "jquery.videofill.min.js" and the other called "jquery.min.js". Copy these files and paste them into your project folder (normally inside a folder called "scripts" or "js"). A common web site project folder might look something like this:
 
 ```
 your-web-site-folder/
